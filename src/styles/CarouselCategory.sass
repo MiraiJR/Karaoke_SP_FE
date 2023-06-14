@@ -1,0 +1,31 @@
+.card-category
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    padding: 10px 5px 50px 5px
+    cursor: pointer
+    transition: 0.2s linear
+    *
+        pointer-events: none
+    &_active
+        background-color: #fffac7
+        border-radius: 400px
+    &:hover
+        background-color: #fffac7
+        border-radius: 400px
+    div
+        overflow: hidden
+        background-color: white
+        border: 1px solid #ccc
+        border-radius: 100%
+        img
+            height: 100px
+            width: 100px
+    span
+        text-align: center
+        margin-top: 10px
+        font-size: 20px
+        font-weight: bold
+.carousel-category
+    width: fit-content

@@ -1,0 +1,129 @@
+#roomdetail
+    overflow: scroll
+    height: 100vh
+    position: fixed
+    top: 0
+    right: 0
+    background-color: white
+    padding: 30px
+    width: 400px
+    display: flex
+    flex-direction: column
+    align-content: center
+.roomdetail
+    &-header
+        width: 100%
+        display: flex
+        &_icon
+            background-color: #fffac7
+            border-radius: 20px
+            border: 1px solid yellow
+            margin-right: 10px
+            position: relative
+            span
+                position: absolute
+                top: 50%
+                left: 50%
+                transform: translate(-50%, -50%)
+                font-size: 30px
+                font-weight: bold
+        &_infor
+            width: 100%
+            padding: 10px
+            background-color: #33cccc
+            border-radius: 10px
+            border: 1px solid cyan
+            div
+                span:first-child
+                    font-weight: bold
+                    margin-right: 10px
+    &-order
+        margin: 40px 0
+    &-footer
+        background-color: #bcf8bf
+        border: 1px solid black
+        border-radius: 10px
+        padding: 10px
+    &-footer_item
+        div
+            span:first-child
+                font-weight: bold
+                text-decoration: underline
+    &-action
+        margin: 30px 0
+        div
+            background-color: #3699e3
+            padding: 10px
+            display: flex
+            justify-content: center
+            align-items: center
+            flex-direction: column
+            border-radius: 10px
+            transition: 0.2s linear
+            cursor: pointer
+            *   
+                text-align: center
+                color: white
+                font-weight: bold
+            svg
+                font-size: 40px
+        div:hover
+            box-shadow: 0px 0px 5px 5px #ccc
+
+// cardorderedfood
+.cardorderedfood
+    padding: 10px
+    background-color: #fff79a
+    border-radius: 10px
+    margin: 5px 0
+    border: 1px solid black
+    &-item
+        margin: 5px 0
+
+    &-item:first-child
+        div
+            font-weight: bold
+    &-item:last-child
+        font-size: 14px
+    &-icon-modify
+        font-size: 30px
+        color: blue
+        cursor: pointer
+
+.icon-modify
+    font-size: 40px
+    color: blue
+    display: flex
+    align-items: center
+    justify-content: center
+    cursor: pointer
+//dataviewroom
+.dataviewroom
+    padding: 20px
+    display: flex
+    flex-direction: column
+    &-room
+        margin: 20px 0
+        display: flex
+    &-title
+        font-size: 50px
+        font-weight: bold
+.card-room
+    height: fit-content
+    background-color: #fffac7
+    border-radius: 20px
+    border: 1px solid yellow
+    margin-right: 10px
+    position: relative
+    cursor: pointer
+    *
+        pointer-events: none
+    span
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        font-size: 30px
+        font-weight: bold
+    &_active
+        background-color: #39b365

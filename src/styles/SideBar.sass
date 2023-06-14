@@ -1,0 +1,44 @@
+.sidebar
+    position: fixed 
+    z-index: 100
+    background-color: black
+    min-height: 100vh
+    width: 250px
+    padding: 20px 0px
+    div
+        img
+            width: max-content
+            padding: 0 30px
+
+.sidebar-options
+    margin-top: 50px
+    display: flex
+    flex-direction: column
+
+.sidebar-option
+    color: white
+    margin: 20px 0
+    padding: 10px 20px
+    font-weight: bold
+    font-size: 20px
+    position: relative
+    transition: 0.3s linear
+    &:hover::before
+        content: ""
+        height: 100%
+        width: 10px
+        position: absolute
+        top: 0
+        left: 0
+        background-color: #cbdfee
+        border-radius: 50px
+.sidebar-option_active
+    &::before
+        content: ""
+        height: 100%
+        width: 10px
+        position: absolute
+        top: 0
+        left: 0
+        background-color: #cbdfee
+        border-radius: 50px
